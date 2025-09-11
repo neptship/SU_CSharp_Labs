@@ -2,9 +2,6 @@
 
 Решения лабораторных работ по курсу **"Основы программирования"** для студентов Самарского университета.
 
-![C#](https://img.shields.io/badge/C%23-239120?logo=csharp&logoColor=white&labelColor=239120&color=239120)
-![.NET](https://img.shields.io/badge/.NET-SDK%206%2B-512BD4?logo=dotnet&logoColor=white)
-
 ## 📁 Содержание
 
 - [Лабораторная работа 1: Линейные программы и программы с ветвлениями](Lab01)
