@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\neptship\\RiderProjects\\ConsoleApp1\\Lab01_Task1\\Lab01_Task1.csproj",
+      "projectUniqueName": "C:\\Users\\neptship\\SU_CSharp_Labs\\Lab01\\variant2\\Lab01_Task1\\Lab01_Task1\\Lab01_Task1.csproj",
       "projectName": "Lab01_Task1",
-      "projectPath": "C:\\Users\\neptship\\RiderProjects\\ConsoleApp1\\Lab01_Task1\\Lab01_Task1.csproj",
+      "projectPath": "C:\\Users\\neptship\\SU_CSharp_Labs\\Lab01\\variant2\\Lab01_Task1\\Lab01_Task1\\Lab01_Task1.csproj",
       "packagesPath": "C:\\Users\\neptship\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\neptship\\RiderProjects\\ConsoleApp1\\Lab01_Task1\\obj\\",
+      "outputPath": "C:\\Users\\neptship\\SU_CSharp_Labs\\Lab01\\variant2\\Lab01_Task1\\Lab01_Task1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\neptship\\AppData\\Roaming\\NuGet\\NuGet.Config"
