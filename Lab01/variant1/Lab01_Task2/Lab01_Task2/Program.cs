@@ -8,31 +8,27 @@ internal class Program
         Console.Write("Введите значение X: ");
         
         int x = Convert.ToInt32(Console.ReadLine());
-        double y = 0;
-        bool defined = true;
-
-        if (x >= -7 && x < -3)
+        double y;
+        if (x >= -7 && x <= 11)
         {
-            y = 3;
-        } else if (x >= -3 && x < 3)
-        {
-            y = - Math.Sqrt(9 - Math.Pow(x,2)) + 3;
-        } else if (x >= 3 && x < 5)
-        {
-            y = -x * 2 + 9;
-        } else if (x >= 5 && x <= 11)
-        {
-            y = (x * 4) / 3 - 12;
-        } else
-        {
-            defined = false;
-        }
-
-        if (defined)
-        {
+            if (x < -3)
+            {
+                y = 3;
+            }
+            else if ( x < 3)
+            {
+                y = -Math.Sqrt(9 - Math.Pow(x, 2)) + 3;
+            }
+            else if (x < 5)
+            {
+                y = -x * 2 + 9;
+            }
+            else
+            {
+                y = (x * 4) / 3 - 12;
+            }
             Console.WriteLine("Значение функции в точке " + x + " равно: " + y);
-        }
-        else
+        } else
         {
             Console.WriteLine("Функция не определена.");
         }
