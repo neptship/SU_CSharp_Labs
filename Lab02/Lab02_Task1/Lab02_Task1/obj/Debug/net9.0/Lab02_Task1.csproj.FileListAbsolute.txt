@@ -1,0 +1,14 @@
+C:\Users\neptship\RiderProjects\Lab02_Task1\Lab02_Task1\bin\Debug\net9.0\Lab02_Task1.exe
+C:\Users\neptship\RiderProjects\Lab02_Task1\Lab02_Task1\bin\Debug\net9.0\Lab02_Task1.deps.json
+C:\Users\neptship\RiderProjects\Lab02_Task1\Lab02_Task1\bin\Debug\net9.0\Lab02_Task1.runtimeconfig.json
+C:\Users\neptship\RiderProjects\Lab02_Task1\Lab02_Task1\bin\Debug\net9.0\Lab02_Task1.dll
+C:\Users\neptship\RiderProjects\Lab02_Task1\Lab02_Task1\bin\Debug\net9.0\Lab02_Task1.pdb
+C:\Users\neptship\RiderProjects\Lab02_Task1\Lab02_Task1\obj\Debug\net9.0\Lab02_Task1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\neptship\RiderProjects\Lab02_Task1\Lab02_Task1\obj\Debug\net9.0\Lab02_Task1.AssemblyInfoInputs.cache
+C:\Users\neptship\RiderProjects\Lab02_Task1\Lab02_Task1\obj\Debug\net9.0\Lab02_Task1.AssemblyInfo.cs
+C:\Users\neptship\RiderProjects\Lab02_Task1\Lab02_Task1\obj\Debug\net9.0\Lab02_Task1.csproj.CoreCompileInputs.cache
+C:\Users\neptship\RiderProjects\Lab02_Task1\Lab02_Task1\obj\Debug\net9.0\Lab02_Task1.dll
+C:\Users\neptship\RiderProjects\Lab02_Task1\Lab02_Task1\obj\Debug\net9.0\refint\Lab02_Task1.dll
+C:\Users\neptship\RiderProjects\Lab02_Task1\Lab02_Task1\obj\Debug\net9.0\Lab02_Task1.pdb
+C:\Users\neptship\RiderProjects\Lab02_Task1\Lab02_Task1\obj\Debug\net9.0\Lab02_Task1.genruntimeconfig.cache
+C:\Users\neptship\RiderProjects\Lab02_Task1\Lab02_Task1\obj\Debug\net9.0\ref\Lab02_Task1.dll
