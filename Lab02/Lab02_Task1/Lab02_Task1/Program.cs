@@ -123,7 +123,7 @@ internal class Program
         Console.Write("Введите x (x > 1): ");
         double x = Convert.ToDouble(Console.ReadLine());
         
-        Console.Write("Введите точность (epsilon): ");
+        Console.Write("Введите точность: ");
         double epsilon = Convert.ToDouble(Console.ReadLine());
 
         if (x <= 1 || epsilon <= 0)
