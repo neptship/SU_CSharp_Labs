@@ -1,6 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-
-using System;
+﻿using System;
 
 internal class Program
 {
@@ -41,7 +39,7 @@ internal class Program
         xmax = Convert.ToDouble(Console.ReadLine());
         Console.Write("Введите Dx: ");
         dx = Convert.ToDouble(Console.ReadLine());
-        Console.WriteLine("\tx\t\ty");
+        Console.WriteLine("\tx\t\ty\n");
         for (double x = xmin; x <= xmax; x += dx)
         {
             if (x >= -7 && x <= 3) {
@@ -61,10 +59,10 @@ internal class Program
                 {
                     y = -x + 2;
                 }
-                Console.WriteLine("\t{0,10:0.00}\t\t{1,16:0.00}", x, y);
+                Console.WriteLine("{0,10:0.00}{1,16:0.00}", x, y);
             } else
             {
-                Console.WriteLine("\t{0,10:0.00}\t\tНе определена", x);
+                Console.WriteLine("{0,10:0.00}{1,16}", x, "Не определена");
             }
         }
     }
