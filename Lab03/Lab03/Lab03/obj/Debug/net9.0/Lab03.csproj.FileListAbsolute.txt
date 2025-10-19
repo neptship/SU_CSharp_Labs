@@ -1,0 +1,15 @@
+C:\Users\neptship\SU_CSharp_Labs\Lab03\Lab03\Lab03\bin\Debug\net9.0\Lab03.exe
+C:\Users\neptship\SU_CSharp_Labs\Lab03\Lab03\Lab03\bin\Debug\net9.0\Lab03.deps.json
+C:\Users\neptship\SU_CSharp_Labs\Lab03\Lab03\Lab03\bin\Debug\net9.0\Lab03.runtimeconfig.json
+C:\Users\neptship\SU_CSharp_Labs\Lab03\Lab03\Lab03\bin\Debug\net9.0\Lab03.dll
+C:\Users\neptship\SU_CSharp_Labs\Lab03\Lab03\Lab03\bin\Debug\net9.0\Lab03.pdb
+C:\Users\neptship\SU_CSharp_Labs\Lab03\Lab03\Lab03\obj\Debug\net9.0\Lab03.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\neptship\SU_CSharp_Labs\Lab03\Lab03\Lab03\obj\Debug\net9.0\Lab03.AssemblyInfoInputs.cache
+C:\Users\neptship\SU_CSharp_Labs\Lab03\Lab03\Lab03\obj\Debug\net9.0\Lab03.AssemblyInfo.cs
+C:\Users\neptship\SU_CSharp_Labs\Lab03\Lab03\Lab03\obj\Debug\net9.0\Lab03.csproj.CoreCompileInputs.cache
+C:\Users\neptship\SU_CSharp_Labs\Lab03\Lab03\Lab03\obj\Debug\net9.0\Lab03.sourcelink.json
+C:\Users\neptship\SU_CSharp_Labs\Lab03\Lab03\Lab03\obj\Debug\net9.0\Lab03.dll
+C:\Users\neptship\SU_CSharp_Labs\Lab03\Lab03\Lab03\obj\Debug\net9.0\refint\Lab03.dll
+C:\Users\neptship\SU_CSharp_Labs\Lab03\Lab03\Lab03\obj\Debug\net9.0\Lab03.pdb
+C:\Users\neptship\SU_CSharp_Labs\Lab03\Lab03\Lab03\obj\Debug\net9.0\Lab03.genruntimeconfig.cache
+C:\Users\neptship\SU_CSharp_Labs\Lab03\Lab03\Lab03\obj\Debug\net9.0\ref\Lab03.dll
