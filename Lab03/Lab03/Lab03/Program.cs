@@ -13,15 +13,15 @@ internal class Program
             {
                 case 1:
                     Task1();
-                    continue;
+                    break;
                 case 2:
                     Task2();
-                    continue;
+                    break;
                 case 3:
-                    return;
+                    break;
                 default:
                     Console.WriteLine("Введите другой номер");
-                    continue;
+                    break;
             }
         }
     }
@@ -30,12 +30,14 @@ internal class Program
     {
         Console.Write("\nВведите размер матрицы (n >= 2): ");
         int n = Convert.ToInt32(Console.ReadLine());
-        
-        if (n < 2)
+
+        while (n < 2)
         {
             Console.WriteLine("Размер матрицы не может быть меньше 2");
-            return;
+            Console.Write("\nВведите размер матрицы (n >= 2): ");
+            n = Convert.ToInt32(Console.ReadLine());
         }
+            
         
         int[,] mat1 = new int[n, n];
         int[,] mat2 = new int[n, n];
@@ -44,11 +46,10 @@ internal class Program
         for (int i = 0; i < n; i++)
         {
             string[] parts = Console.ReadLine().Split(' ');
-            if (parts.Length != n)
+            while (parts.Length != n)
             {
                 Console.WriteLine($"Ошибка: введите {n} элементов");
-                i--;
-                continue;
+                parts = Console.ReadLine().Split(' ');
             }
             for (int j = 0; j < n; j++)
             {
@@ -60,11 +61,10 @@ internal class Program
         for (int i = 0; i < n; i++)
         {
             string[] parts = Console.ReadLine().Split(' ');
-            if (parts.Length != n)
+            while (parts.Length != n)
             {
                 Console.WriteLine($"Ошибка: введите {n} элементов");
-                i--;
-                continue;
+                parts = Console.ReadLine().Split(' ');
             }
             for (int j = 0; j < n; j++)
             {
@@ -73,10 +73,10 @@ internal class Program
         }
         
         Console.WriteLine("\nПервая матрица:");
-        PrintMatrix(mat1, n);
+        PrintMatrix(mat1);
         
         Console.WriteLine("\nВторая матрица:");
-        PrintMatrix(mat2, n);
+        PrintMatrix(mat2);
         
         while (true)
         {
@@ -86,36 +86,36 @@ internal class Program
             switch (op)
             {
                 case 1:
-                    int[,] sum = Addition(mat1, mat2, n);
+                    int[,] sum = Addition(mat1, mat2);
                     Console.WriteLine("\nРезультат сложения:");
-                    PrintMatrix(sum, n);
+                    PrintMatrix(sum);
                     break;
                     
                 case 2:
-                    int[,] diff = Subtract(mat1, mat2, n);
+                    int[,] diff = Subtract(mat1, mat2);
                     Console.WriteLine("\nРезультат вычитания:");
-                    PrintMatrix(diff, n);
+                    PrintMatrix(diff);
                     break;
                     
                 case 3:
-                    int[,] mult = Mult(mat1, mat2, n);
+                    int[,] mult = Mult(mat1, mat2);
                     Console.WriteLine("\nРезультат умножения:");
-                    PrintMatrix(mult, n);
+                    PrintMatrix(mult);
                     break;
                     
                 case 4:
                     Console.Write("\nВведите число: ");
                     int num = Convert.ToInt32(Console.ReadLine());
-                    int[,] result1 = MultNum(mat1, num, n);
+                    int[,] result1 = MultNum(mat1, num);
                     Console.WriteLine($"\nРезультат умножения первой матрицы на {num}:");
-                    PrintMatrix(result1, n);
-                    int[,] result2 = MultNum(mat2, num, n);
+                    PrintMatrix(result1);
+                    int[,] result2 = MultNum(mat2, num);
                     Console.WriteLine($"\n\nРезультат умножения второй матрицы на {num}:");
-                    PrintMatrix(result2, n);
+                    PrintMatrix(result2);
                     break;
                     
                 case 5:
-                    if (Equal(mat1, mat2, n))
+                    if (Equal(mat1, mat2))
                     {
                         Console.WriteLine("\nМатрицы равны");
                     }
@@ -123,8 +123,8 @@ internal class Program
                     {
                         Console.WriteLine("\nМатрицы не равны");
                     }
+
                     break;
-                    
                 case 6:
                     return;
                 default:
@@ -139,10 +139,11 @@ internal class Program
         Console.Write("Введите число: ");
         int num = Convert.ToInt32(Console.ReadLine());
     
-        if (num < 0)
+        while (num < 0)
         {
             Console.WriteLine("Число должно быть положительным");
-            return;
+            Console.Write("Введите число: ");
+            num = Convert.ToInt32(Console.ReadLine());
         }
         
         int temp = num;
@@ -213,11 +214,11 @@ internal class Program
         Console.WriteLine("Десятичное: " + newNum);
     }
     
-    static void PrintMatrix(int[,] mat, int n)
+    static void PrintMatrix(int[,] mat)
     {
-        for (int i = 0; i < n; i++)
+        for (int i = 0; i < mat.GetLength(0); i++)
         {
-            for (int j = 0; j < n; j++)
+            for (int j = 0; j < mat.GetLength(1); j++)
             {
                 Console.Write(mat[i, j] + " ");
             }
@@ -225,12 +226,12 @@ internal class Program
         }
     }
     
-    static int[,] Addition(int[,] mat1, int[,] mat2, int n)
+    static int[,] Addition(int[,] mat1, int[,] mat2)
     {
-        int[,] res = new int[n, n];
-        for (int i = 0; i < n; i++)
+        int[,] res = new int[mat1.GetLength(0), mat1.GetLength(1)];
+        for (int i = 0; i < mat1.GetLength(0); i++)
         {
-            for (int j = 0; j < n; j++)
+            for (int j = 0; j < mat1.GetLength(1); j++)
             {
                 res[i, j] = mat1[i, j] + mat2[i, j];
             }
@@ -238,12 +239,12 @@ internal class Program
         return res;
     }
     
-    static int[,] Subtract(int[,] mat1, int[,] mat2, int n)
+    static int[,] Subtract(int[,] mat1, int[,] mat2)
     {
-        int[,] res = new int[n, n];
-        for (int i = 0; i < n; i++)
+        int[,] res = new int[mat1.GetLength(0), mat1.GetLength(1)];
+        for (int i = 0; i < mat1.GetLength(0); i++)
         {
-            for (int j = 0; j < n; j++)
+            for (int j = 0; j < mat1.GetLength(1); j++)
             {
                 res[i, j] = mat1[i, j] - mat2[i, j];
             }
@@ -251,15 +252,15 @@ internal class Program
         return res;
     }
     
-    static int[,] Mult(int[,] mat1, int[,] mat2, int n)
+    static int[,] Mult(int[,] mat1, int[,] mat2)
     {
-        int[,] res = new int[n, n];
-        for (int i = 0; i < n; i++)
+        int[,] res = new int[mat1.GetLength(0), mat1.GetLength(1)];
+        for (int i = 0; i < mat1.GetLength(0); i++)
         {
-            for (int j = 0; j < n; j++)
+            for (int j = 0; j < mat1.GetLength(1); j++)
             {
                 res[i, j] = 0;
-                for (int k = 0; k < n; k++)
+                for (int k = 0; k < mat1.GetLength(0); k++)
                 {
                     res[i, j] += mat1[i, k] * mat2[k, j];
                 }
@@ -268,12 +269,12 @@ internal class Program
         return res;
     }
     
-    static int[,] MultNum(int[,] mat, int num, int n)
+    static int[,] MultNum(int[,] mat, int num)
     {
-        int[,] res = new int[n, n];
-        for (int i = 0; i < n; i++)
+        int[,] res = new int[mat.GetLength(0), mat.GetLength(1)];
+        for (int i = 0; i < mat.GetLength(0); i++)
         {
-            for (int j = 0; j < n; j++)
+            for (int j = 0; j < mat.GetLength(1); j++)
             {
                 res[i, j] = mat[i, j] * num;
             }
@@ -281,11 +282,11 @@ internal class Program
         return res;
     }
     
-    static bool Equal(int[,] mat1, int[,] mat2, int n)
+    static bool Equal(int[,] mat1, int[,] mat2)
     {
-        for (int i = 0; i < n; i++)
+        for (int i = 0; i < mat1.GetLength(0); i++)
         {
-            for (int j = 0; j < n; j++)
+            for (int j = 0; j < mat1.GetLength(1); j++)
             {
                 if (mat1[i, j] != mat2[i, j])
                 {
