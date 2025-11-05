@@ -8,19 +8,19 @@
     "net9.0": []
   },
   "packageFolders": {
-    "C:\\Users\\neptship\\.nuget\\packages\\": {}
+    "/Users/neptship/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\neptship\\SU_CSharp_Labs\\Lab03\\Lab03\\Lab03\\Lab03.csproj",
+      "projectUniqueName": "/Users/neptship/Documents/projects/SU_CSharp_Labs/Lab03/Lab03/Lab03/Lab03.csproj",
       "projectName": "Lab03",
-      "projectPath": "C:\\Users\\neptship\\SU_CSharp_Labs\\Lab03\\Lab03\\Lab03\\Lab03.csproj",
-      "packagesPath": "C:\\Users\\neptship\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\neptship\\SU_CSharp_Labs\\Lab03\\Lab03\\Lab03\\obj\\",
+      "projectPath": "/Users/neptship/Documents/projects/SU_CSharp_Labs/Lab03/Lab03/Lab03/Lab03.csproj",
+      "packagesPath": "/Users/neptship/.nuget/packages/",
+      "outputPath": "/Users/neptship/Documents/projects/SU_CSharp_Labs/Lab03/Lab03/Lab03/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\neptship\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "/Users/neptship/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net9.0"
@@ -65,7 +65,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Users\\neptship\\.dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/Users/neptship/.dotnet/sdk/9.0.306/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
