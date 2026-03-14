@@ -1,0 +1,15 @@
+/Users/neptship/Documents/projects/SU_CSharp_Labs/Lab01_2/Lab01/Lab01/bin/Debug/net9.0/Lab01
+/Users/neptship/Documents/projects/SU_CSharp_Labs/Lab01_2/Lab01/Lab01/bin/Debug/net9.0/Lab01.deps.json
+/Users/neptship/Documents/projects/SU_CSharp_Labs/Lab01_2/Lab01/Lab01/bin/Debug/net9.0/Lab01.runtimeconfig.json
+/Users/neptship/Documents/projects/SU_CSharp_Labs/Lab01_2/Lab01/Lab01/bin/Debug/net9.0/Lab01.dll
+/Users/neptship/Documents/projects/SU_CSharp_Labs/Lab01_2/Lab01/Lab01/bin/Debug/net9.0/Lab01.pdb
+/Users/neptship/Documents/projects/SU_CSharp_Labs/Lab01_2/Lab01/Lab01/obj/Debug/net9.0/Lab01.GeneratedMSBuildEditorConfig.editorconfig
+/Users/neptship/Documents/projects/SU_CSharp_Labs/Lab01_2/Lab01/Lab01/obj/Debug/net9.0/Lab01.AssemblyInfoInputs.cache
+/Users/neptship/Documents/projects/SU_CSharp_Labs/Lab01_2/Lab01/Lab01/obj/Debug/net9.0/Lab01.AssemblyInfo.cs
+/Users/neptship/Documents/projects/SU_CSharp_Labs/Lab01_2/Lab01/Lab01/obj/Debug/net9.0/Lab01.csproj.CoreCompileInputs.cache
+/Users/neptship/Documents/projects/SU_CSharp_Labs/Lab01_2/Lab01/Lab01/obj/Debug/net9.0/Lab01.sourcelink.json
+/Users/neptship/Documents/projects/SU_CSharp_Labs/Lab01_2/Lab01/Lab01/obj/Debug/net9.0/Lab01.dll
+/Users/neptship/Documents/projects/SU_CSharp_Labs/Lab01_2/Lab01/Lab01/obj/Debug/net9.0/refint/Lab01.dll
+/Users/neptship/Documents/projects/SU_CSharp_Labs/Lab01_2/Lab01/Lab01/obj/Debug/net9.0/Lab01.pdb
+/Users/neptship/Documents/projects/SU_CSharp_Labs/Lab01_2/Lab01/Lab01/obj/Debug/net9.0/Lab01.genruntimeconfig.cache
+/Users/neptship/Documents/projects/SU_CSharp_Labs/Lab01_2/Lab01/Lab01/obj/Debug/net9.0/ref/Lab01.dll

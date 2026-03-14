@@ -1,0 +1,14 @@
+/Users/neptship/Documents/projects/RiderProjects/Lab06/Lab06/obj/Debug/net9.0/Lab06.GeneratedMSBuildEditorConfig.editorconfig
+/Users/neptship/Documents/projects/RiderProjects/Lab06/Lab06/obj/Debug/net9.0/Lab06.AssemblyInfoInputs.cache
+/Users/neptship/Documents/projects/RiderProjects/Lab06/Lab06/obj/Debug/net9.0/Lab06.AssemblyInfo.cs
+/Users/neptship/Documents/projects/RiderProjects/Lab06/Lab06/obj/Debug/net9.0/Lab06.csproj.CoreCompileInputs.cache
+/Users/neptship/Documents/projects/RiderProjects/Lab06/Lab06/bin/Debug/net9.0/Lab06
+/Users/neptship/Documents/projects/RiderProjects/Lab06/Lab06/bin/Debug/net9.0/Lab06.deps.json
+/Users/neptship/Documents/projects/RiderProjects/Lab06/Lab06/bin/Debug/net9.0/Lab06.runtimeconfig.json
+/Users/neptship/Documents/projects/RiderProjects/Lab06/Lab06/bin/Debug/net9.0/Lab06.dll
+/Users/neptship/Documents/projects/RiderProjects/Lab06/Lab06/bin/Debug/net9.0/Lab06.pdb
+/Users/neptship/Documents/projects/RiderProjects/Lab06/Lab06/obj/Debug/net9.0/Lab06.dll
+/Users/neptship/Documents/projects/RiderProjects/Lab06/Lab06/obj/Debug/net9.0/refint/Lab06.dll
+/Users/neptship/Documents/projects/RiderProjects/Lab06/Lab06/obj/Debug/net9.0/Lab06.pdb
+/Users/neptship/Documents/projects/RiderProjects/Lab06/Lab06/obj/Debug/net9.0/Lab06.genruntimeconfig.cache
+/Users/neptship/Documents/projects/RiderProjects/Lab06/Lab06/obj/Debug/net9.0/ref/Lab06.dll

@@ -1,0 +1,14 @@
+/Users/neptship/Documents/projects/Lab05/Lab05/obj/Debug/net9.0/Lab05.GeneratedMSBuildEditorConfig.editorconfig
+/Users/neptship/Documents/projects/Lab05/Lab05/obj/Debug/net9.0/Lab05.AssemblyInfoInputs.cache
+/Users/neptship/Documents/projects/Lab05/Lab05/obj/Debug/net9.0/Lab05.AssemblyInfo.cs
+/Users/neptship/Documents/projects/Lab05/Lab05/obj/Debug/net9.0/Lab05.csproj.CoreCompileInputs.cache
+/Users/neptship/Documents/projects/Lab05/Lab05/bin/Debug/net9.0/Lab05
+/Users/neptship/Documents/projects/Lab05/Lab05/bin/Debug/net9.0/Lab05.deps.json
+/Users/neptship/Documents/projects/Lab05/Lab05/bin/Debug/net9.0/Lab05.runtimeconfig.json
+/Users/neptship/Documents/projects/Lab05/Lab05/bin/Debug/net9.0/Lab05.dll
+/Users/neptship/Documents/projects/Lab05/Lab05/bin/Debug/net9.0/Lab05.pdb
+/Users/neptship/Documents/projects/Lab05/Lab05/obj/Debug/net9.0/Lab05.dll
+/Users/neptship/Documents/projects/Lab05/Lab05/obj/Debug/net9.0/refint/Lab05.dll
+/Users/neptship/Documents/projects/Lab05/Lab05/obj/Debug/net9.0/Lab05.pdb
+/Users/neptship/Documents/projects/Lab05/Lab05/obj/Debug/net9.0/Lab05.genruntimeconfig.cache
+/Users/neptship/Documents/projects/Lab05/Lab05/obj/Debug/net9.0/ref/Lab05.dll
