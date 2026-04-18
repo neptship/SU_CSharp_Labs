@@ -6,19 +6,19 @@ class LinkedListVector : IVectorable
 {
     public class Node
     {
-        public int Data;
-        public Node? Next;
+        public int data;
+        public Node? next;
 
         public Node(int data)
         {
-            Data = data;
-            Next = null;
+            this.data = data;
+            next = null;
         }
         
         public Node(int data, Node? next)
         {
-            Data = data;
-            Next = next;
+            this.data = data;
+            this.next = next;
         }
     }
 
@@ -54,7 +54,7 @@ class LinkedListVector : IVectorable
             {
                 throw new IndexOutOfRangeException($"Индекс вне границ списка");
             }
-            return GetNode(position).Data;
+            return GetNode(position).data;
         }
         set
         {
@@ -62,7 +62,7 @@ class LinkedListVector : IVectorable
             {
                 throw new IndexOutOfRangeException($"Индекс вне границ списка");
             }
-            GetNode(position).Data = value;
+            GetNode(position).data = value;
         }
     }
     
@@ -75,7 +75,7 @@ class LinkedListVector : IVectorable
             while (current != null)
             {
                 count++;
-                current = current.Next;
+                current = current.next;
             }
             return count;
         }
@@ -86,7 +86,7 @@ class LinkedListVector : IVectorable
         Node? current = head;
         for (int i = 0; i < index; i++)
         {
-            current = current!.Next;
+            current = current!.next;
         }
         return current!;
     }
@@ -97,8 +97,8 @@ class LinkedListVector : IVectorable
         Node? current = head;
         while (current != null)
         {
-            sum += (double)current.Data * current.Data;
-            current = current.Next;
+            sum += (double)current.data * current.data;
+            current = current.next;
         }
         return Math.Sqrt(sum);
     }
@@ -112,11 +112,11 @@ class LinkedListVector : IVectorable
             return;
         }
         Node current = head;
-        while (current.Next != null)
+        while (current.next != null)
         {
-            current = current.Next;
+            current = current.next;
         }
-        current.Next = newNode;
+        current.next = newNode;
     }
 
     public void AddToBeginning(int value)
@@ -140,8 +140,8 @@ class LinkedListVector : IVectorable
         }
 
         Node prev = GetNode(position - 2);
-        Node newNode = new Node(value, prev.Next);
-        prev.Next = newNode;
+        Node newNode = new Node(value, prev.next);
+        prev.next = newNode;
     }
     
     public int RemoveFromEnd()
@@ -151,20 +151,20 @@ class LinkedListVector : IVectorable
             throw new InvalidOperationException("Список пуст");
         }
 
-        if (head.Next == null)
+        if (head.next == null)
         {
-            int val = head.Data;
+            int val = head.data;
             head = null;
             return val;
         }
 
         Node current = head;
-        while (current.Next!.Next != null)
+        while (current.next!.next != null)
         {
-            current = current.Next;
+            current = current.next;
         }
-        int value = current.Next.Data;
-        current.Next = null;
+        int value = current.next.data;
+        current.next = null;
         return value;
     }
     
@@ -175,8 +175,8 @@ class LinkedListVector : IVectorable
             throw new InvalidOperationException("Список пуст");
         }
 
-        int value = head.Data;
-        head = head.Next;
+        int value = head.data;
+        head = head.next;
         return value;
     }
 
@@ -194,8 +194,8 @@ class LinkedListVector : IVectorable
         }
 
         Node prev = GetNode(position - 2);
-        int value = prev.Next!.Data;
-        prev.Next = prev.Next.Next;
+        int value = prev.next!.data;
+        prev.next = prev.next.next;
         return value;
     }
     
@@ -205,8 +205,8 @@ class LinkedListVector : IVectorable
         Node? current = head;
         while (current != null)
         {
-            Console.Write(current.Data + " ");
-            current = current.Next;
+            Console.Write(current.data + " ");
+            current = current.next;
         }
         Console.WriteLine("]");
         
@@ -218,8 +218,8 @@ class LinkedListVector : IVectorable
         Node? current = head;
         while (current != null)
         {
-            result += " " + current.Data;
-            current = current.Next;
+            result += " " + current.data;
+            current = current.next;
         }
         return result;
     }

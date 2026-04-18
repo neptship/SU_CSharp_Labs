@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace Lab04;
 
@@ -327,7 +329,11 @@ class Program
     static void VectorArrayMenu()
     {
         Console.Write("Сколько векторов создать? ");
-        int count = Convert.ToInt32(Console.ReadLine());
+        if (!int.TryParse(Console.ReadLine(), out int count) || count <= 0)
+        {
+            Console.WriteLine("Ошибка: некорректное количество векторов");
+            return;
+        }
         IVectorable[] vectors = new IVectorable[count];
 
         for (int i = 0; i < count; i++)
@@ -335,7 +341,12 @@ class Program
             Console.Write($"Вектор [{i}] тип (1=Array, 2=LinkedList): ");
             string typeChoice = Console.ReadLine();
             Console.Write("Размер: ");
-            int size = Convert.ToInt32(Console.ReadLine());
+            if (!int.TryParse(Console.ReadLine(), out int size))
+            {
+                Console.WriteLine("Ошибка: некорректный размер");
+                vectors[i] = new ArrayVector();
+                continue;
+            }
 
             switch (typeChoice)
             {
@@ -362,7 +373,7 @@ class Program
 
         while (true)
         {
-            Console.WriteLine("\nМеню:\n1 - Вывести векторы\n2 - Equals\n3 - Мин/макс по координатам\n4 - Сортировка по модулю\n5 - Клонировать вектор\n0 - Назад");
+            Console.WriteLine("\nМеню:\n1 - Вывести векторы\n2 - Сравнение\n3 - Мин/макс по координатам\n4 - Сортировка по модулю\n5 - Клонировать вектор\n0 - Назад");
 
             string choice = Console.ReadLine();
             try
@@ -374,22 +385,74 @@ class Program
                             Console.WriteLine($"[{i}] {vectors[i]}");
                         break;
                     case "2":
-                        Console.Write("Индекс первого: ");
-                        int a = Convert.ToInt32(Console.ReadLine());
-                        Console.Write("Индекс второго: ");
-                        int b = Convert.ToInt32(Console.ReadLine());
-                        Console.WriteLine("Равны: " + vectors[a].Equals(vectors[b]));
+                        Console.Write("Индекс первого вектора: ");
+                        if (!int.TryParse(Console.ReadLine(), out int a))
+                        {
+                            Console.WriteLine("Ошибка: некорректный ввод индекса");
+                            break;
+                        }
+
+                        Console.Write("Индекс второго вектора: ");
+                        if (!int.TryParse(Console.ReadLine(), out int b))
+                        {
+                            Console.WriteLine("Ошибка: некорректный ввод индекса");
+                            break;
+                        }
+
+                        if (a < 0 || a >= vectors.Length || b < 0 || b >= vectors.Length)
+                        {
+                            Console.WriteLine("Ошибка: индекс выходит за границы массива");
+                            break;
+                        }
+
+                        if (vectors[a].Equals(vectors[b]))
+                        {
+                            Console.WriteLine("Векторы равны");
+                        }
+                        else
+                        {
+                            Console.WriteLine("Векторы не равны");
+                        }
+                        
                         break;
                     case "3":
                         IVectorable min = vectors[0];
                         IVectorable max = vectors[0];
+                        List<IVectorable> minArr = new List<IVectorable>();
+                        List<IVectorable> maxArr = new List<IVectorable>();
                         foreach (var v in vectors)
                         {
-                            if (((IComparable)v).CompareTo(min) < 0) min = v;
-                            if (((IComparable)v).CompareTo(max) > 0) max = v;
+                            if (((IComparable)v).CompareTo(min) < 0)
+                            {
+                                minArr.Clear();
+                                min = v;
+                                minArr.Add(min);
+                            } else if (((IComparable)v).CompareTo(min) == 0)
+                            {
+                                minArr.Add(v);
+                            }
+
+                            if (((IComparable)v).CompareTo(max) > 0)
+                            {
+                                maxArr.Clear();
+                                max = v;
+                                maxArr.Add(max);
+                            } else if (((IComparable)v).CompareTo(max) == 0)
+                            {
+                                maxArr.Add(v);
+                            }
                         }
-                        Console.WriteLine("Мин по числу координат: " + min);
-                        Console.WriteLine("Макс по числу координат: " + max);
+
+                        Console.WriteLine("Мин по числу координат: ");
+                        foreach (var v in minArr)
+                        {
+                            Console.WriteLine(v);
+                        }
+                        Console.WriteLine("Мин по числу координат: ");
+                        foreach (var v in maxArr)
+                        {
+                            Console.WriteLine(v);
+                        }
                         break;
                     case "4":
                         IVectorable[] sorted = (IVectorable[])vectors.Clone();
@@ -400,19 +463,38 @@ class Program
                         break;
                     case "5":
                         Console.Write("Индекс вектора: ");
-                        int idx = Convert.ToInt32(Console.ReadLine());
+                        if (!int.TryParse(Console.ReadLine(), out int idx))
+                        {
+                            Console.WriteLine("Ошибка: некорректный ввод индекса");
+                            break;
+                        }
+                        if (idx < 0 || idx >= vectors.Length)
+                        {
+                            Console.WriteLine("Ошибка: индекс выходит за границы массива");
+                            break;
+                        }
+                        
                         IVectorable original = vectors[idx];
                         IVectorable clone = (IVectorable)((ICloneable)original).Clone();
 
                         Console.WriteLine("Оригинал до изменения: " + original);
 
                         Console.Write("Изменить элемент оригинала, индекс: ");
-                        int editIdx = Convert.ToInt32(Console.ReadLine());
+                        if (!int.TryParse(Console.ReadLine(), out int editIdx))
+                        {
+                            Console.WriteLine("Ошибка: некорректный ввод индекса");
+                            break;
+                        }
                         Console.Write("Новое значение: ");
-                        original[editIdx] = Convert.ToInt32(Console.ReadLine());
+                        if (!int.TryParse(Console.ReadLine(), out int newValue))
+                        {
+                            Console.WriteLine("Ошибка: некорректное значение");
+                            break;
+                        }
+                        clone[editIdx] = newValue;
 
                         Console.WriteLine("Оригинал после изменения: " + original);
-                        Console.WriteLine("Клон после изменения:     " + clone);
+                        Console.WriteLine("Клон после изменения: " + clone);
                         Console.WriteLine("Equals: " + original.Equals(clone));
                         break;
                     case "0":

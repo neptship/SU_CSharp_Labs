@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/neptship/Documents/projects/SU_CSharp_Labs/Lab03_2/Lab03/Lab03/Lab03.csproj",
+      "projectUniqueName": "/Users/neptship/Documents/projects/SU_CSharp_Labs/programming/Lab03/Lab03/Lab03/Lab03.csproj",
       "projectName": "Lab03",
-      "projectPath": "/Users/neptship/Documents/projects/SU_CSharp_Labs/Lab03_2/Lab03/Lab03/Lab03.csproj",
+      "projectPath": "/Users/neptship/Documents/projects/SU_CSharp_Labs/programming/Lab03/Lab03/Lab03/Lab03.csproj",
       "packagesPath": "/Users/neptship/.nuget/packages/",
-      "outputPath": "/Users/neptship/Documents/projects/SU_CSharp_Labs/Lab03_2/Lab03/Lab03/obj/",
+      "outputPath": "/Users/neptship/Documents/projects/SU_CSharp_Labs/programming/Lab03/Lab03/Lab03/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/neptship/.nuget/NuGet/NuGet.Config"

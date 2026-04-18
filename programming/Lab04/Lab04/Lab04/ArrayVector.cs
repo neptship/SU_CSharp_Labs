@@ -106,7 +106,7 @@ class ArrayVector : IVectorable, IComparable, ICloneable
         {
             return false;
         }
-        for (int i = 0; i <= Length; i++)
+        for (int i = 0; i < Length; i++)
         {
             if (this[i] != other[i])
             {

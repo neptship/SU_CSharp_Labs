@@ -1,0 +1,17 @@
+{
+  "runtimeOptions": {
+    "tfm": "net9.0",
+    "framework": {
+      "name": "Microsoft.NETCore.App",
+      "version": "9.0.0"
+    },
+    "additionalProbingPaths": [
+      "C:\\Users\\neptship\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\neptship\\.nuget\\packages"
+    ],
+    "configProperties": {
+      "System.Runtime.Serialization.EnableUnsafeBinaryFormatterSerialization": true,
+      "Microsoft.NETCore.DotNetHostPolicy.SetAppPaths": true
+    }
+  }
+}

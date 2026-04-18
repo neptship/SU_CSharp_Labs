@@ -1,0 +1,113 @@
+{
+  "version": 3,
+  "targets": {
+    "net9.0": {
+      "System.Runtime.Serialization.Formatters/9.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/System.Runtime.Serialization.Formatters.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/System.Runtime.Serialization.Formatters.dll": {
+            "related": ".xml"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "System.Runtime.Serialization.Formatters/9.0.0": {
+      "sha512": "0W36/lajD3CM4QNaFydAz9clH+bHulOsAU2Zo0lblzfxwW0xXNolUc9BQCCaIk98ISZle+YVyjbjX29fe4CLmA==",
+      "type": "package",
+      "path": "system.runtime.serialization.formatters/9.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "PACKAGE.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net8.0/System.Runtime.Serialization.Formatters.dll",
+        "lib/net8.0/System.Runtime.Serialization.Formatters.xml",
+        "system.runtime.serialization.formatters.9.0.0.nupkg.sha512",
+        "system.runtime.serialization.formatters.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net9.0": [
+      "System.Runtime.Serialization.Formatters >= 9.0.0-*"
+    ]
+  },
+  "packageFolders": {
+    "/Users/neptship/.nuget/packages/": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "/Users/neptship/Documents/projects/SU_CSharp_Labs/programming/Lab05/Lab05/Lab05/Lab05.csproj",
+      "projectName": "Lab05",
+      "projectPath": "/Users/neptship/Documents/projects/SU_CSharp_Labs/programming/Lab05/Lab05/Lab05/Lab05.csproj",
+      "packagesPath": "/Users/neptship/.nuget/packages/",
+      "outputPath": "/Users/neptship/Documents/projects/SU_CSharp_Labs/programming/Lab05/Lab05/Lab05/obj/",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "/Users/neptship/.nuget/NuGet/NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net9.0"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "9.0.300"
+    },
+    "frameworks": {
+      "net9.0": {
+        "targetAlias": "net9.0",
+        "dependencies": {
+          "System.Runtime.Serialization.Formatters": {
+            "target": "Package",
+            "version": "[9.0.0-*, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "/Users/neptship/.dotnet/sdk/9.0.306/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
